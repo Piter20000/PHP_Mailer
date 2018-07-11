@@ -1,0 +1,102 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>PHP_Mailer</Name>
+    <ProjectGuid>{9d0c35d7-83a3-4f98-a2a5-76ff37088b93}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <RuntimeVersion>7.1</RuntimeVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Classes\PHP_Mailer_Class.php" />
+    <Compile Include="index.php" />
+    <Compile Include="PHP_Mailer\vendor\autoload.php" />
+    <Compile Include="PHP_Mailer\vendor\composer\autoload_classmap.php" />
+    <Compile Include="PHP_Mailer\vendor\composer\autoload_namespaces.php" />
+    <Compile Include="PHP_Mailer\vendor\composer\autoload_psr4.php" />
+    <Compile Include="PHP_Mailer\vendor\composer\autoload_real.php" />
+    <Compile Include="PHP_Mailer\vendor\composer\autoload_static.php" />
+    <Compile Include="PHP_Mailer\vendor\composer\ClassLoader.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\get_oauth_token.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-am.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-ar.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-az.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-ba.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-be.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-bg.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-ca.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-ch.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-cs.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-da.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-de.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-el.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-eo.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-es.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-et.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-fa.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-fi.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-fo.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-fr.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-gl.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-he.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-hi.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-hr.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-hu.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-id.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-it.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-ja.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-ka.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-ko.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-lt.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-lv.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-ms.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-nb.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-nl.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-pl.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-pt.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-pt_br.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-ro.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-rs.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-ru.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-sk.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-sl.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-sv.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-tr.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-uk.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-vi.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-zh.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\phpmailer.lang-zh_cn.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\src\Exception.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\src\OAuth.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\src\PHPMailer.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\src\POP3.php" />
+    <Compile Include="PHP_Mailer\vendor\phpmailer\phpmailer\src\SMTP.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="PHP_Mailer\" />
+    <Folder Include="PHP_Mailer\vendor\" />
+    <Folder Include="PHP_Mailer\vendor\composer\" />
+    <Folder Include="PHP_Mailer\vendor\phpmailer\" />
+    <Folder Include="PHP_Mailer\vendor\phpmailer\phpmailer\" />
+    <Folder Include="PHP_Mailer\vendor\phpmailer\phpmailer\language\" />
+    <Folder Include="PHP_Mailer\vendor\phpmailer\phpmailer\src\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="composer.json" />
+    <Content Include="PHP_Mailer\vendor\composer\installed.json" />
+    <Content Include="PHP_Mailer\vendor\composer\LICENSE" />
+    <Content Include="PHP_Mailer\vendor\phpmailer\phpmailer\LICENSE" />
+    <Content Include="PHP_Mailer\vendor\phpmailer\phpmailer\README.md" />
+    <Content Include="PHP_Mailer\vendor\phpmailer\phpmailer\SECURITY.md" />
+    <Content Include="PHP_Mailer\vendor\phpmailer\phpmailer\VERSION" />
+  </ItemGroup>
+</Project>
